@@ -4,7 +4,13 @@ document.getElementById('diposite-btn').addEventListener('click', function(){
    const dipositeField = document.getElementById('diposite-feild'); 
    const newDipositeValueString = dipositeField.value ; 
    const newDipositeValue = parseFloat(newDipositeValueString); 
-   
+   //to clear input field of diposite; 
+   dipositeField.value = "";  
+
+   if(isNaN(newDipositeValue)===true){
+      alert('Please Enter a valid number.'); 
+      return; 
+   }
    //step-2: get the current amount and convert to number 
    // then add currentvalue and newvalue = totalcurrect  value diposite; 
    const diposite = document.getElementById('amount-diposite'); 
@@ -21,6 +27,5 @@ document.getElementById('diposite-btn').addEventListener('click', function(){
    const currentBalance  = parseFloat(currentBalanceString); 
    balance.innerText = currentBalance + newDipositeValue; 
 
-   //to clear input field of diposite; 
-   dipositeField.value = "";  
+   
 }); 
