@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bank Inside</title>
+   <script src="https://cdn.tailwindcss.com"></script>  
+</head>
+<body>
+ <header>
+   <h1 class="text-5xl text-center font-semibold  mt-6">Let get Some  <span class="font-bold text-lime-500">Money!!!</span></h1>
+ </header>
+<main id="main">
+   <section>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 w-5/6 mx-auto mt-8">
+         <div id="diposite" class=" bg-green-600 uppercase rounded-2xl py-10">
+            <h4 class="text-2xl text-white  font-bold text-center mb-2">disposit</h4>
+            <h2 class="text-5xl text-white  font-bold text-center"><span id="amount-diposite">5</span>$</h2>
+         </div>
+         <div id="withdraw" class=" bg-pink-500 uppercase rounded-2xl py-10">
+            <h4  class="text-2xl text-white  font-bold text-center mb-2">withdraw</h4>
+            <h2 class="text-5xl text-white  font-bold text-center"><span id="amount-withdraw">00</span>$</h2>
+         </div>
+         <div id="cash" class=" bg-violet-500 uppercase rounded-2xl py-10">
+            <h4 class="text-2xl text-white  font-bold text-center mb-2">Balance</h4>
+            <h2 class="text-5xl text-white  font-bold text-center"> <span  id="balance">1200</span>$</h2>
+         </div>
+      </div>
+   </section>
+   <!-- diposite and  withdraw -->
+   <section class="mt-14">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-5/6 mx-auto ">
+        <div class="bg-yellow-500 text-white rounded-2xl py-10 text-center">
+            <h2 class="font-bold text-white text-3xl uppercase mb-5">Diposite Now</h2>
+            <input type="number" id="diposite-feild" name="diposite" class=" rounded-lg h-12 p-5 font-bold  text-black mb-5 w-4/6 placeholder:text-slate-500" placeholder="$ Amount You Want to Withdraw">
+            <button id="diposite-btn"  class="bg-slate-900 block w-30 text-white text-center mx-auto px-5 py-3  hover:bg-white hover:text-slate-900  font-semibold text-lg uppercase rounded-xl transition ease-in ">Diposite</button>
+        </div>
+        <div class="bg-sky-500 text-white rounded-2xl py-10 text-center">
+            <h2 class="font-bold text-white text-3xl uppercase mb-5">Withdraw Now</h2>
+            <input type="number" id="withdraw-feild" name="withdraw" class=" rounded-lg h-12 p-5 font-bold text-black mb-5 w-4/6 placeholder:text-slate-600" placeholder="$ Amount You Want To Withdraw">
+            <button id="withdraw-btn"  class="bg-slate-900 block w-30 text-white text-center mx-auto px-5 py-3  hover:bg-white hover:text-slate-900  font-semibold text-lg uppercase rounded-xl transition ease-in">Withdraw</button>
+        </div>
+      </section>
+</main>
+
+<script src="js/diposite.js"></script>
+<script src="js/withdraw.js"></script>
+</body>
+</html>

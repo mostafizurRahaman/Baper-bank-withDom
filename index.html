@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bank Website</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+ <header>
+   <h1 class="text-5xl text-center font-semibold  mt-6">Welcome Come <span class="font-bold text-lime-500">Bapper bank!!!</span></h1>
+ </header>
+ <main id="main-section">
+   <section id="login-section" class="bg-pink-500 w-3/4 mx-auto p-10 rounded-lg mt-8 ">
+      <h2 class="text-3xl text-center mb-4 font-bold uppercase"> Please Login: </h2>
+      <div class="grid grid-cols-1 gap-5 w-4/6 mx-auto ">
+         <input type="email" name="email" id="user-email"  class="rounded-lg  h-12 p-5 font-bold" placeholder="Enter your email: ">
+         <input type="password" name="password" id="user-password" class=" rounded-lg h-12 p-5 font-bold" placeholder="Enter your password: ">
+        
+         <button id="submit-btn"  class="bg-slate-900 inline-block w-30 text-white text-center mx-auto px-4 py-3  hover:bg-white hover:text-slate-900  font-semibold text-lg capitalize rounded-xl transition ease-in">submit now</button>
+      </div>
+   </section>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
